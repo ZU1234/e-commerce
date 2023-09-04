@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="e-commerce-store-front" />
+        <module name="e-commerce-core" />
+        <module name="e-commerce-facade" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="e-commerce" target="11" />
+      <module name="e-commerce-core" target="11" />
+      <module name="e-commerce-facade" target="11" />
+      <module name="e-commerce-store-front" target="11" />
+      <module name="store-front" target="11" />
+      <module name="swagger-ui" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="e-commerce-core" options="-parameters" />
+      <module name="e-commerce-facade" options="-parameters" />
+      <module name="e-commerce-store-front" options="-parameters" />
+      <module name="store-front" options="-parameters" />
+      <module name="swagger-ui" options="-parameters" />
+    </option>
+  </component>
+</project>
